@@ -18,10 +18,19 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
+  // min-height: 100vh;
   font-family: v.$ft-main;
-  background: v.$clr-bg;
+  // background: v.$clr-bg;
   color: v.$clr-txt;
   font-size: v.$sp_16;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  @include m.clickable;
+  text-decoration: none;
+  color: inherit;
+}
