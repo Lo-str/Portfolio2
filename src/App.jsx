@@ -1,7 +1,8 @@
 // App
 import {Route, Routes} from 'react-router-dom'
-import './styles/layout/app.scss'
+// import './styles/layout/app.scss'
 
+import Intro from './components/Intro/Intro.jsx'
 import Header from './components/Header/Header.jsx'
 import TopNav from './components/TopNav/TopNav.jsx'
 import BtmNav from './components/BtmNav/BtmNav.jsx'
@@ -11,9 +12,16 @@ import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/Home/Home.jsx'
 
 function App() {
+  const [showIntro, setShowIntro] = useState(true)
+
+  if (showIntro) {
+    return <Intro onFinished={() => setShowIntro(false)} />
+  }
+
   return (
     // Template structure
     <>
+      <Home />
       <div className="app">
         <div className="app__wrap">
 
