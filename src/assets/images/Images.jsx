@@ -19,6 +19,11 @@ const img = {
     left3: require('./walk-left/left3.png').default,
     left4: require('./walk-left/left4.png').default,
     left5: require('./walk-left/left5.png').default,
+    // Decor
+    door: require('./intro-door.png').default,
+    portal: require('./intro-portal.png').default,
+    desk: require('./desk.png').default,
+
 }
 
 export default img
